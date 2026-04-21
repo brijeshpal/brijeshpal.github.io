@@ -1,0 +1,110 @@
+# Brijesh Kumar — Academic Portfolio
+
+A world-class personal academic portfolio website for a PhD Research Scholar in AI / ML / Cybersecurity. Designed for GitHub Pages deployment.
+
+## Live Demo
+
+Visit: `https://<your-username>.github.io`
+
+---
+
+## Features
+
+- Fully responsive (mobile, tablet, desktop)
+- Dark / Light mode toggle with system preference detection
+- Animated particle background
+- Typing animation hero section
+- Scroll-reveal animations
+- Animated skill progress bars & stat counters
+- Glassmorphism design language
+- SEO meta tags
+- Fast-loading (pure HTML/CSS/JS, no frameworks)
+- Sticky navigation with active section highlighting
+- Contact form (opens mailto)
+- Scroll-to-top button
+- Blog placeholder section
+
+---
+
+## Deployment on GitHub Pages
+
+### Option A: User Site (`username.github.io`)
+
+1. Go to [github.com/new](https://github.com/new)
+2. Create a repository named **exactly** `<your-username>.github.io`  
+   (e.g., `brijeshpal.github.io`)
+3. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/<your-username>.github.io.git
+   cd <your-username>.github.io
+   ```
+4. Copy all files from this project into the repository:
+   ```
+   index.html
+   style.css
+   script.js
+   README.md
+   ```
+5. Push to GitHub:
+   ```bash
+   git add .
+   git commit -m "Deploy portfolio"
+   git push origin main
+   ```
+6. Visit `https://<your-username>.github.io` — your site is live!
+
+### Option B: Project Site
+
+1. Create any repository (e.g., `portfolio`)
+2. Upload all files
+3. Go to **Settings → Pages**
+4. Under **Source**, select **Deploy from a branch**
+5. Choose `main` branch and `/ (root)` folder
+6. Click **Save**
+7. Visit `https://<your-username>.github.io/portfolio`
+
+---
+
+## File Structure
+
+```
+├── index.html      # Main HTML page
+├── style.css       # All styles (light + dark themes)
+├── script.js       # Animations, interactions, particles
+└── README.md       # This file
+```
+
+---
+
+## Customization
+
+- **Personal details**: Edit `index.html` directly
+- **Colors**: Modify CSS variables in `:root` and `[data-theme="dark"]` in `style.css`
+- **Fonts**: Change Google Fonts imports in `index.html` `<head>`
+- **Particles**: Adjust `PARTICLE_COUNT` in `script.js`
+- **CV/Resume**: Replace the `#downloadCV` and `#downloadResume` href with your actual PDF link
+
+---
+
+## Adding Your CV
+
+1. Add your CV file (e.g., `Brijesh_Kumar_CV.pdf`) to the repository root
+2. Update the download links in `index.html`:
+   ```html
+   <a href="Brijesh_Kumar_CV.pdf" class="btn btn-outline" download>Download CV</a>
+   ```
+
+---
+
+## Tech Stack
+
+- HTML5 + CSS3 + Vanilla JavaScript
+- Google Fonts (Playfair Display, Source Sans 3, JetBrains Mono)
+- Font Awesome 6.5 icons
+- No build tools required
+
+---
+
+## License
+
+© 2026 Brijesh Kumar. All rights reserved.
